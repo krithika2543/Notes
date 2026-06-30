@@ -13,3 +13,7 @@ Props are information passed to the component (similar to function parameters)
 State are information maintained within the component (similar to variables defined within the function)
 props are immutable while states can be changed
 setState is a asynchronous function. whenever we want a task to happen after modiying the state, add that as a callback function for the setState. 
+
+useReducer() is a react hook. it accepts two inputs: a reducer function and a initialState variable.
+The reducer function takes in the current state and an action which will be dispatched and it will returns the new state.
+Action describes what happened, dispatch sends the action to the reducer, reducer decides how to update the state, the component rerenders with a new state.
